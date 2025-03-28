@@ -4,6 +4,7 @@ namespace Calculator
     {
         string first, second, znak;
         bool operand2 = false;
+        bool dotEnable = true;
         
 
         public Form1()
@@ -19,7 +20,18 @@ namespace Calculator
         public void Numbers(string num)
         {
             tbAnswer.Text = "";
-            if (keyPressZero <=1 && keyPressDot == 0)
+            if(keyPressZero == 0 || (keyPressZero != 0 && dotEnable == true))
+                if (operand2 == false)
+                {
+                    first += num;
+                    tbAnswer.Text += first;
+                }
+                else
+                {
+                    second += num;
+                    tbAnswer.Text += second;
+                }
+            else if (keyPressZero != 0)
             {
                 tbAnswer.Text = "";
                 if (operand2 == false)
@@ -31,19 +43,6 @@ namespace Calculator
                 {
                     second += num;
                     tbAnswer.Text += second;
-                }
-            }
-            else if(keyPressZero > 1 && keyPressZero > 1)
-            {
-                if (operand2 == false)
-                {
-                    first += num;
-                    tbAnswer.Text = first;
-                }
-                else
-                {
-                    second += num;
-                    tbAnswer.Text = second;
                 }
             }
         }
@@ -205,12 +204,9 @@ namespace Calculator
         }
 
         // ѕлавающа€ точка
-        int keyPressDot = 0;
         private void btnDot_Click(object sender, EventArgs e)
         {
-            keyPressDot++;
             Numbers(",");
-            btnDot.Enabled = false;
         }
 
         // —мена пол€рности числа (+/-)
@@ -218,16 +214,15 @@ namespace Calculator
         {
             if (i == 0)
             {
-                if (first == "0")
+                if (first != "0")
                 {
                     first = Convert.ToString(double.Parse(first) * -1.0);
                     tbAnswer.Text = first;
                 }
             }
-
             else
             {
-                if(otvet == 0)
+                if(otvet != 0)
                 {
                     otvet = otvet * -1.0;
                     tbAnswer.Text = Convert.ToString(otvet);

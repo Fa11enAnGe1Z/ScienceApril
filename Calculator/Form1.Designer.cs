@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             num1 = new Button();
             num3 = new Button();
             panel1 = new Panel();
@@ -53,6 +54,8 @@
             // 
             // num1
             // 
+            num1.BackColor = SystemColors.AppWorkspace;
+            num1.FlatStyle = FlatStyle.Flat;
             num1.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num1.Location = new Point(1, 166);
             num1.Margin = new Padding(1);
@@ -60,11 +63,13 @@
             num1.Size = new Size(87, 53);
             num1.TabIndex = 1;
             num1.Text = "1";
-            num1.UseVisualStyleBackColor = true;
+            num1.UseVisualStyleBackColor = false;
             num1.Click += num1_Click;
             // 
             // num3
             // 
+            num3.BackColor = SystemColors.AppWorkspace;
+            num3.FlatStyle = FlatStyle.Flat;
             num3.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num3.Location = new Point(179, 165);
             num3.Margin = new Padding(1);
@@ -72,7 +77,7 @@
             num3.Size = new Size(87, 53);
             num3.TabIndex = 2;
             num3.Text = "3";
-            num3.UseVisualStyleBackColor = true;
+            num3.UseVisualStyleBackColor = false;
             num3.Click += num3_Click;
             // 
             // panel1
@@ -102,6 +107,8 @@
             // 
             // btnClear
             // 
+            btnClear.BackColor = Color.IndianRed;
+            btnClear.FlatStyle = FlatStyle.Popup;
             btnClear.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnClear.Location = new Point(179, 0);
             btnClear.Margin = new Padding(1);
@@ -109,11 +116,13 @@
             btnClear.Size = new Size(87, 53);
             btnClear.TabIndex = 18;
             btnClear.Text = "C";
-            btnClear.UseVisualStyleBackColor = true;
+            btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
             // 
             // btnDot
             // 
+            btnDot.BackColor = Color.SkyBlue;
+            btnDot.FlatStyle = FlatStyle.Popup;
             btnDot.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnDot.Location = new Point(1, 220);
             btnDot.Margin = new Padding(1);
@@ -121,11 +130,13 @@
             btnDot.Size = new Size(87, 53);
             btnDot.TabIndex = 17;
             btnDot.Text = ".";
-            btnDot.UseVisualStyleBackColor = true;
+            btnDot.UseVisualStyleBackColor = false;
             btnDot.Click += btnDot_Click;
             // 
             // btnReplace
             // 
+            btnReplace.BackColor = Color.SkyBlue;
+            btnReplace.FlatStyle = FlatStyle.Popup;
             btnReplace.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnReplace.Location = new Point(1, 0);
             btnReplace.Margin = new Padding(1);
@@ -133,11 +144,13 @@
             btnReplace.Size = new Size(176, 53);
             btnReplace.TabIndex = 16;
             btnReplace.Text = "+/-";
-            btnReplace.UseVisualStyleBackColor = true;
+            btnReplace.UseVisualStyleBackColor = false;
             btnReplace.Click += btnReplace_Click;
             // 
             // numZero
             // 
+            numZero.BackColor = SystemColors.AppWorkspace;
+            numZero.FlatStyle = FlatStyle.Flat;
             numZero.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             numZero.Location = new Point(90, 221);
             numZero.Margin = new Padding(1);
@@ -145,11 +158,13 @@
             numZero.Size = new Size(87, 53);
             numZero.TabIndex = 15;
             numZero.Text = "0";
-            numZero.UseVisualStyleBackColor = true;
+            numZero.UseVisualStyleBackColor = false;
             numZero.Click += numZero_Click;
             // 
             // btnSeparation
             // 
+            btnSeparation.BackColor = Color.SkyBlue;
+            btnSeparation.FlatStyle = FlatStyle.Flat;
             btnSeparation.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnSeparation.Location = new Point(268, 0);
             btnSeparation.Margin = new Padding(1);
@@ -157,11 +172,13 @@
             btnSeparation.Size = new Size(87, 53);
             btnSeparation.TabIndex = 14;
             btnSeparation.Text = "/";
-            btnSeparation.UseVisualStyleBackColor = true;
+            btnSeparation.UseVisualStyleBackColor = false;
             btnSeparation.Click += btnSeparation_Click;
             // 
             // btnEqually
             // 
+            btnEqually.BackColor = Color.FromArgb(255, 192, 128);
+            btnEqually.FlatStyle = FlatStyle.Popup;
             btnEqually.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnEqually.Location = new Point(179, 220);
             btnEqually.Margin = new Padding(1);
@@ -169,11 +186,13 @@
             btnEqually.Size = new Size(176, 53);
             btnEqually.TabIndex = 13;
             btnEqually.Text = "=";
-            btnEqually.UseVisualStyleBackColor = true;
+            btnEqually.UseVisualStyleBackColor = false;
             btnEqually.Click += btnEqually_Click;
             // 
             // btnMultiplication
             // 
+            btnMultiplication.BackColor = Color.SkyBlue;
+            btnMultiplication.FlatStyle = FlatStyle.Popup;
             btnMultiplication.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnMultiplication.Location = new Point(268, 55);
             btnMultiplication.Margin = new Padding(1);
@@ -181,11 +200,13 @@
             btnMultiplication.Size = new Size(87, 53);
             btnMultiplication.TabIndex = 12;
             btnMultiplication.Text = "*";
-            btnMultiplication.UseVisualStyleBackColor = true;
+            btnMultiplication.UseVisualStyleBackColor = false;
             btnMultiplication.Click += btnMultiplication_Click;
             // 
             // btnMinus
             // 
+            btnMinus.BackColor = Color.SkyBlue;
+            btnMinus.FlatStyle = FlatStyle.Popup;
             btnMinus.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnMinus.Location = new Point(268, 110);
             btnMinus.Margin = new Padding(1);
@@ -193,11 +214,13 @@
             btnMinus.Size = new Size(87, 53);
             btnMinus.TabIndex = 11;
             btnMinus.Text = "-";
-            btnMinus.UseVisualStyleBackColor = true;
+            btnMinus.UseVisualStyleBackColor = false;
             btnMinus.Click += btnMinus_Click;
             // 
             // btnPlus
             // 
+            btnPlus.BackColor = Color.SkyBlue;
+            btnPlus.FlatStyle = FlatStyle.Popup;
             btnPlus.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             btnPlus.Location = new Point(268, 165);
             btnPlus.Margin = new Padding(1);
@@ -205,11 +228,13 @@
             btnPlus.Size = new Size(87, 53);
             btnPlus.TabIndex = 10;
             btnPlus.Text = "+";
-            btnPlus.UseVisualStyleBackColor = true;
+            btnPlus.UseVisualStyleBackColor = false;
             btnPlus.Click += btnPlus_Click;
             // 
             // num9
             // 
+            num9.BackColor = SystemColors.AppWorkspace;
+            num9.FlatStyle = FlatStyle.Flat;
             num9.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num9.Location = new Point(179, 55);
             num9.Margin = new Padding(1);
@@ -217,11 +242,13 @@
             num9.Size = new Size(87, 53);
             num9.TabIndex = 9;
             num9.Text = "9";
-            num9.UseVisualStyleBackColor = true;
+            num9.UseVisualStyleBackColor = false;
             num9.Click += num9_Click;
             // 
             // num8
             // 
+            num8.BackColor = SystemColors.AppWorkspace;
+            num8.FlatStyle = FlatStyle.Flat;
             num8.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num8.Location = new Point(90, 56);
             num8.Margin = new Padding(1);
@@ -229,11 +256,13 @@
             num8.Size = new Size(87, 53);
             num8.TabIndex = 8;
             num8.Text = "8";
-            num8.UseVisualStyleBackColor = true;
+            num8.UseVisualStyleBackColor = false;
             num8.Click += num8_Click;
             // 
             // num7
             // 
+            num7.BackColor = SystemColors.AppWorkspace;
+            num7.FlatStyle = FlatStyle.Flat;
             num7.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num7.Location = new Point(1, 56);
             num7.Margin = new Padding(1);
@@ -241,11 +270,13 @@
             num7.Size = new Size(87, 53);
             num7.TabIndex = 7;
             num7.Text = "7";
-            num7.UseVisualStyleBackColor = true;
+            num7.UseVisualStyleBackColor = false;
             num7.Click += num7_Click;
             // 
             // num6
             // 
+            num6.BackColor = SystemColors.AppWorkspace;
+            num6.FlatStyle = FlatStyle.Flat;
             num6.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num6.Location = new Point(179, 110);
             num6.Margin = new Padding(1);
@@ -253,11 +284,13 @@
             num6.Size = new Size(87, 53);
             num6.TabIndex = 6;
             num6.Text = "6";
-            num6.UseVisualStyleBackColor = true;
+            num6.UseVisualStyleBackColor = false;
             num6.Click += num6_Click;
             // 
             // num5
             // 
+            num5.BackColor = SystemColors.AppWorkspace;
+            num5.FlatStyle = FlatStyle.Flat;
             num5.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num5.Location = new Point(90, 111);
             num5.Margin = new Padding(1);
@@ -265,11 +298,13 @@
             num5.Size = new Size(87, 53);
             num5.TabIndex = 5;
             num5.Text = "5";
-            num5.UseVisualStyleBackColor = true;
+            num5.UseVisualStyleBackColor = false;
             num5.Click += num5_Click;
             // 
             // num4
             // 
+            num4.BackColor = SystemColors.AppWorkspace;
+            num4.FlatStyle = FlatStyle.Flat;
             num4.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num4.Location = new Point(1, 111);
             num4.Margin = new Padding(1);
@@ -277,11 +312,13 @@
             num4.Size = new Size(87, 53);
             num4.TabIndex = 4;
             num4.Text = "4";
-            num4.UseVisualStyleBackColor = true;
+            num4.UseVisualStyleBackColor = false;
             num4.Click += num4_Click;
             // 
             // num2
             // 
+            num2.BackColor = SystemColors.AppWorkspace;
+            num2.FlatStyle = FlatStyle.Flat;
             num2.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
             num2.Location = new Point(90, 166);
             num2.Margin = new Padding(1);
@@ -289,7 +326,7 @@
             num2.Size = new Size(87, 53);
             num2.TabIndex = 3;
             num2.Text = "2";
-            num2.UseVisualStyleBackColor = true;
+            num2.UseVisualStyleBackColor = false;
             num2.Click += num2_Click;
             // 
             // tbAnswer
@@ -308,10 +345,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.AppWorkspace;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(379, 335);
             Controls.Add(tbAnswer);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             Text = "Калькулятор";
             panel1.ResumeLayout(false);
