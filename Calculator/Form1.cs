@@ -2,11 +2,8 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
-        string first="0", second, znak;
-        bool firstNumber = false;
-        bool statusZnak = false;
+        string first, second, znak;
         bool operand2 = false;
-        bool era = false;
         
 
         public Form1()
@@ -224,10 +221,7 @@ namespace Calculator
 
 
 
-
-            statusZnak = false;
             quanZnak = 0;
-            era = true;
             first = "";
             second = "";
         }
