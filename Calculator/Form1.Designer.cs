@@ -308,7 +308,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonShadow;
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(379, 335);
             Controls.Add(tbAnswer);
             Controls.Add(panel1);
