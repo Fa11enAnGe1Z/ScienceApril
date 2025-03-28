@@ -48,30 +48,6 @@ namespace Calculator
             }
         }
 
-        public void OpStatus(char pol)
-        {
-            if (pol == '-')
-            {
-                btnSeparation.Enabled = false;   // Деление
-                btnDot.Enabled = false;          // Точка
-                btnBack.Enabled = false;         // Назад
-                btnMinus.Enabled = false;        // Минус
-                btnPlus.Enabled = false;         // Плюс
-                btnMultiplication.Enabled = false;   // Умножение
-                btnReplace.Enabled = false;      // Смена знака
-            }
-            if (pol == '+')
-            {
-                btnSeparation.Enabled = true;   // Деление
-                btnDot.Enabled = true;          // Точка
-                btnBack.Enabled = true;         // Назад
-                btnMinus.Enabled = true;        // Минус
-                btnPlus.Enabled = true;         // Плюс
-                btnMultiplication.Enabled = true;   // Умножение
-                btnReplace.Enabled = true;      // Смена знака
-            }
-        }
-
 
         // Функция Operation
         // Для изменения значения bool переменной znakBool на true, чтобы ввести 2 операнд
@@ -83,9 +59,6 @@ namespace Calculator
             tbAnswer.Text = zk;
         }
 
-
-
-        //-------------------------------------------------------------------------------------------------------------------------
         // Передаем цифры в виде строк в функцию Numbers
         int keyPressZero = 0;
         private void numZero_Click(object sender, EventArgs e)
@@ -164,10 +137,6 @@ namespace Calculator
             Operation("+");
         }
 
-        //-------------------------------------------------------------------------------------------------------------------------
-
-
-
         // Переменная для запоминания ответа
         double otvet = 0;
 
@@ -218,24 +187,8 @@ namespace Calculator
                 default:
                     break;
             }
-
-
-
-            quanZnak = 0;
             first = "";
             second = "";
-        }
-
-        int quanZnak = 0;
-        // При измении TextBox проверяет пустой ли он
-        private void tbAnswer_TextChanged(object sender, EventArgs e)
-        {
-            // Если не пустой - знаки разблокируются
-            if (tbAnswer.Text.Length > 0 && quanZnak == 0)
-            {
-                quanZnak++;
-                OpStatus('+');
-            }
         }
 
 

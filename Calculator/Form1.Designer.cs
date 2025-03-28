@@ -317,7 +317,6 @@
             tbAnswer.Size = new Size(359, 35);
             tbAnswer.TabIndex = 4;
             tbAnswer.TextAlign = HorizontalAlignment.Right;
-            tbAnswer.TextChanged += tbAnswer_TextChanged;
             // 
             // Form1
             // 
