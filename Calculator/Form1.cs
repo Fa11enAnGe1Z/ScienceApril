@@ -49,29 +49,6 @@ namespace Calculator
                     tbAnswer.Text = second;
                 }
             }
-
-
-
-
-
-            /*
-                        if (era == true)
-                        {
-                            tbAnswer.Text = "";
-                            era = false;
-                        }
-
-                        if (znakBool == false)
-                        {
-                            y = y + num;
-                        }
-                        else
-                        {
-                            z = z + num;
-                        }
-                        btnRoot.Enabled = true;
-                        tbAnswer.Text += num;
-            */
         }
 
         public void OpStatus(char pol)
@@ -106,20 +83,9 @@ namespace Calculator
 
         public void Operation(string zk)
         {
-           // if()
-
-
-
-
             operand2 = true;
             znak = zk;
             tbAnswer.Text = zk;
-
-
-            /*
-                        OpStatus('-');
-                        btnBack.Enabled = true;         // Назад
-            */
         }
 
 
@@ -291,20 +257,6 @@ namespace Calculator
             second = "";
             x = 0;
             y = 0;
-
-
-
-
-            /*
-                        otvet = 0;
-                        first = "";
-                        second = "";
-                        tbAnswer.Text = "";
-
-                        statusZnak = false;
-                        OpStatus('-');
-                        btnBack.Enabled = true;         // Назад
-            */
         }
 
 
