@@ -32,7 +32,6 @@
             num3 = new Button();
             panel1 = new Panel();
             btnBack = new Button();
-            btnRoot = new Button();
             btnClear = new Button();
             btnDot = new Button();
             btnReplace = new Button();
@@ -80,7 +79,6 @@
             // panel1
             // 
             panel1.Controls.Add(btnBack);
-            panel1.Controls.Add(btnRoot);
             panel1.Controls.Add(btnClear);
             panel1.Controls.Add(btnDot);
             panel1.Controls.Add(btnReplace);
@@ -116,18 +114,6 @@
             btnBack.Text = "←";
             btnBack.UseVisualStyleBackColor = true;
             // 
-            // btnRoot
-            // 
-            btnRoot.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
-            btnRoot.Location = new Point(1, 0);
-            btnRoot.Margin = new Padding(1);
-            btnRoot.Name = "btnRoot";
-            btnRoot.Size = new Size(87, 53);
-            btnRoot.TabIndex = 19;
-            btnRoot.Text = "√";
-            btnRoot.UseVisualStyleBackColor = true;
-            btnRoot.Click += btnRoot_Click;
-            // 
             // btnClear
             // 
             btnClear.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
@@ -143,7 +129,7 @@
             // btnDot
             // 
             btnDot.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
-            btnDot.Location = new Point(179, 220);
+            btnDot.Location = new Point(1, 220);
             btnDot.Margin = new Padding(1);
             btnDot.Name = "btnDot";
             btnDot.Size = new Size(87, 53);
@@ -155,7 +141,7 @@
             // btnReplace
             // 
             btnReplace.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
-            btnReplace.Location = new Point(1, 221);
+            btnReplace.Location = new Point(1, 0);
             btnReplace.Margin = new Padding(1);
             btnReplace.Name = "btnReplace";
             btnReplace.Size = new Size(87, 53);
@@ -191,10 +177,10 @@
             // btnEqually
             // 
             btnEqually.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
-            btnEqually.Location = new Point(268, 220);
+            btnEqually.Location = new Point(179, 220);
             btnEqually.Margin = new Padding(1);
             btnEqually.Name = "btnEqually";
-            btnEqually.Size = new Size(87, 53);
+            btnEqually.Size = new Size(176, 53);
             btnEqually.TabIndex = 13;
             btnEqually.Text = "=";
             btnEqually.UseVisualStyleBackColor = true;
@@ -369,7 +355,6 @@
         private Button btnReplace;
         private Button numZero;
         private Button btnBack;
-        private Button btnRoot;
         private TextBox tbAnswer;
     }
 }

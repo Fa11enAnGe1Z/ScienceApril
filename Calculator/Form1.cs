@@ -61,7 +61,6 @@ namespace Calculator
                 btnMinus.Enabled = false;        // Минус
                 btnPlus.Enabled = false;         // Плюс
                 btnMultiplication.Enabled = false;   // Умножение
-                btnRoot.Enabled = false;         // Корень
                 btnReplace.Enabled = false;      // Смена знака
             }
             if (pol == '+')
@@ -72,7 +71,6 @@ namespace Calculator
                 btnMinus.Enabled = true;        // Минус
                 btnPlus.Enabled = true;         // Плюс
                 btnMultiplication.Enabled = true;   // Умножение
-                btnRoot.Enabled = true;         // Корень
                 btnReplace.Enabled = true;      // Смена знака
             }
         }
@@ -266,37 +264,6 @@ namespace Calculator
             keyPressDot++;
             Numbers(",");
             btnDot.Enabled = false;
-        }
-
-        private void btnRoot_Click(object sender, EventArgs e)
-        {
-            if (i == 0)
-            {
-                double otvetfirst = 0;
-                otvetfirst = double.Parse(first);
-                if (otvetfirst == 0)
-                {
-                    tbAnswer.Text = "Введите число!";
-                    Task.Delay(50);
-                    tbAnswer.Text = "";
-
-                }
-                else
-                {
-                    Task.Delay(50);
-                    first = Convert.ToString(Math.Sqrt(otvetfirst));
-                    tbAnswer.Text = first;
-                }
-
-                    
-
-            }
-            else
-            {
-                otvet = Math.Sqrt(otvet);
-                tbAnswer.Text = Convert.ToString(otvet);
-            }
-
         }
 
         private void btnReplace_Click(object sender, EventArgs e)
