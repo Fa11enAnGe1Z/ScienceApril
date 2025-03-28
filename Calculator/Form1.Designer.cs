@@ -31,7 +31,6 @@
             num1 = new Button();
             num3 = new Button();
             panel1 = new Panel();
-            btnBack = new Button();
             btnClear = new Button();
             btnDot = new Button();
             btnReplace = new Button();
@@ -78,7 +77,6 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(btnBack);
             panel1.Controls.Add(btnClear);
             panel1.Controls.Add(btnDot);
             panel1.Controls.Add(btnReplace);
@@ -102,22 +100,10 @@
             panel1.Size = new Size(359, 279);
             panel1.TabIndex = 3;
             // 
-            // btnBack
-            // 
-            btnBack.Enabled = false;
-            btnBack.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
-            btnBack.Location = new Point(179, 0);
-            btnBack.Margin = new Padding(1);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(87, 53);
-            btnBack.TabIndex = 20;
-            btnBack.Text = "←";
-            btnBack.UseVisualStyleBackColor = true;
-            // 
             // btnClear
             // 
             btnClear.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
-            btnClear.Location = new Point(90, 0);
+            btnClear.Location = new Point(179, 0);
             btnClear.Margin = new Padding(1);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(87, 53);
@@ -144,7 +130,7 @@
             btnReplace.Location = new Point(1, 0);
             btnReplace.Margin = new Padding(1);
             btnReplace.Name = "btnReplace";
-            btnReplace.Size = new Size(87, 53);
+            btnReplace.Size = new Size(176, 53);
             btnReplace.TabIndex = 16;
             btnReplace.Text = "+/-";
             btnReplace.UseVisualStyleBackColor = true;
@@ -327,7 +313,7 @@
             Controls.Add(tbAnswer);
             Controls.Add(panel1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Калькулятор";
             panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -353,7 +339,6 @@
         private Button btnDot;
         private Button btnReplace;
         private Button numZero;
-        private Button btnBack;
         private TextBox tbAnswer;
     }
 }

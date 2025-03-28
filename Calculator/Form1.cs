@@ -204,7 +204,7 @@ namespace Calculator
             y = 0;
         }
 
-
+        // ѕлавающа€ точка
         int keyPressDot = 0;
         private void btnDot_Click(object sender, EventArgs e)
         {
@@ -213,6 +213,7 @@ namespace Calculator
             btnDot.Enabled = false;
         }
 
+        // —мена пол€рности числа (+/-)
         private void btnReplace_Click(object sender, EventArgs e)
         {
             if (i == 0)
@@ -231,7 +232,6 @@ namespace Calculator
                     otvet = otvet * -1.0;
                     tbAnswer.Text = Convert.ToString(otvet);
                 }
-
             }
 
         }
