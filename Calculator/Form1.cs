@@ -188,6 +188,7 @@ namespace Calculator
             }
             first = "";
             second = "";
+            operand2 = false;
         }
 
 
